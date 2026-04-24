@@ -7,8 +7,10 @@ schedule:
 - cron: "0 3 * * *"
 workflow_dispatch:
 jobs:
-sync:runs-on: ubuntu-latest
-steps:- name: Request Factory Rebuild
+sync:
+runs-on: ubuntu-latest
+steps:
+- name: Request Factory Rebuild
 run: 
 |curl -X POST \
 -H "Authorization: Bearer ${{ secrets.HF_TOKEN }}" \
