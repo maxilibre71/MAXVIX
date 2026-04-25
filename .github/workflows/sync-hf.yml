@@ -13,5 +13,5 @@ steps:
 - name: Request Factory Rebuild
 run: 
 |curl -X POST \
--H "Authorization: Bearer ${{ secrets.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}}" \
+-H "Authorization: Bearer ${{ secrets.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}}" \
 "https://huggingface.co/api/spaces/maxilibre71/maxilibre71space/restart?factory=true”
